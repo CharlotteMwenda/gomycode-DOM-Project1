@@ -1,4 +1,4 @@
-/* style.css - Custom styles for shopping cart */
+/* style.css - Shopping Cart Styles */
 
 * {
     margin: 0;
@@ -84,6 +84,17 @@ main {
     text-align: center;
 }
 
+/* Image centering */
+.card-img-top {
+    max-height: 150px;
+    object-fit: contain;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
 .quantity {
     font-size: 28px;
     font-weight: bold;
@@ -96,7 +107,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 25px;
     flex-wrap: wrap;
 }
 
@@ -112,12 +123,6 @@ main {
     font-weight: bold;
     color: #27ae60;
     margin: 10px 0;
-}
-
-.card-img-top {
-    max-height: 150px;
-    object-fit: contain;
-    padding: 10px;
 }
 
 .btn-outline-success {
@@ -143,9 +148,13 @@ main {
     .total-price span {
         font-size: 24px;
     }
+    
+    .card-img-top {
+        max-width: 80%;
+    }
 }
 
-/* Animation for item deletion /
+/* Animation for item deletion */
 .product-item {
     transition: opacity 0.3s ease;
 }
